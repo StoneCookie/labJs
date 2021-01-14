@@ -1,0 +1,34 @@
+<ng-container *ngIf="workers.length > 0">
+  <div class="row">
+    <div class="col-12">
+      <h5>{{ title }}</h5>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" [style.width]="'100px'">#</th>
+            <th scope="col" [style.width]="'40%'">Имя</th>
+            <th scope="col">Фамилия</th>
+            <th scope="col">Телефон</th>
+            <th scope="col" [style.width]="'150px'"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let worker of workers">
+            <th scope="row">{{ worker.id }}</th>
+            <td>{{ worker.name }}</td>
+            <td>{{ worker.surname }}</td>
+            <td>+7 {{ worker.phone }}</td>
+            <td class="row justify-content-end">
+              <button class="btn btn-info btn-sm" (click)="onEditWorker(worker)">
+                Редактровать
+              </button>
+              <button class="btn btn-danger btn-sm mt-1" (click)="onDeleteWorker(worker.id)">
+                Удалить
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-container>

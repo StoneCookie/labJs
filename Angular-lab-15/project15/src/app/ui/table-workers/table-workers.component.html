@@ -1,0 +1,37 @@
+<ng-container *ngIf="workers.length > 0">
+  <div class="row">
+    <div class="col-12">
+      <h5>{{ title }}</h5>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" [style.width]="'5%'">#</th>
+            <th scope="col" [style.width]="'12%'">Имя</th>
+            <th scope="col" [style.width]="'15%'">Фамилия</th>
+            <th scope="col" [style.width]="'15%'">Телефон</th>
+            <th scope="col" [style.width]="'10%'">
+              <input type="text" class="form-control mb-3" placeholder="Имя" [(ngModel)]="name">
+              <input type="text" class="form-control" placeholder="Фамилия" [(ngModel)]="surname">
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let worker of workers | appFactorial : name : surname">
+            <th scope="row">{{ worker.id }}</th>
+            <td>{{ worker.name }}</td>
+            <td>{{ worker.surname }}</td>
+            <td>+7 {{ worker.phone }}</td>
+            <td class="d-flex flex-column align-items-end mr-1">
+              <button class="btn btn-info btn-sm" (click)="onEditWorker(worker)">
+                Редактровать
+              </button>
+              <button class="btn btn-danger btn-sm mt-1" (click)="onDeleteWorker(worker.id)">
+                Удалить
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-container>
