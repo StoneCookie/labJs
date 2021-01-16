@@ -8,7 +8,7 @@
       "phone": "(800) 777-77-77",
       "email": "peshkin90@mail.ru",
       "birthday": "1990-12-24",
-      "place": 3
+      "place": 1
     },
     {
       "id": 2,
@@ -59,6 +59,66 @@
       "email": "sluzhil98@google.com",
       "birthday": "1999-09-01",
       "place": 0
+    },
+    {
+      "id": 7,
+      "surname": "Архипов",
+      "name": "Матвей",
+      "lastname": "Алексеевич",
+      "phone": "(917) 735-40-60",
+      "email": "arhipov87@mail.ru",
+      "birthday": "1987-01-03",
+      "place": 0
+    },
+    {
+      "id": 8,
+      "surname": "Смирнова",
+      "name": "Светлана",
+      "lastname": "Максимовна",
+      "phone": "(927) 401-00-07",
+      "email": "smirnova95@ya.ru",
+      "birthday": "1995-03-05",
+      "place": 3
+    },
+    {
+      "id": 9,
+      "surname": "Белобородов",
+      "name": "Валерий",
+      "lastname": "Дмитриевич",
+      "phone": "(927) 223-32-23",
+      "email": "beloborodov02@mail.ru",
+      "birthday": "2002-05-07",
+      "place": 1
+    },
+    {
+      "id": 10,
+      "surname": "Жмых",
+      "name": "Мария",
+      "lastname": "Андреевна",
+      "phone": "(917) 617-44-37",
+      "email": "zhmih94@mail.ru",
+      "birthday": "1994-12-21",
+      "place": 2
+    },
+    {
+      "id": 11,
+      "surname": "Яковлев",
+      "name": "Юрий",
+      "lastname": "Васильевич",
+      "phone": "(899) 455-45-54",
+      "email": "yakovlev78@gmail.com",
+      "birthday": "1978-04-18",
+      "place": 2
+    },
+    {
+      "id": 12,
+      "surname": "Ковалева",
+      "name": "Ирина",
+      "lastname": "Станиславовна",
+      "phone": "(915) 711-17-71",
+      "email": "kovaleva93@mail.ru",
+      "birthday": "1993-10-21",
+      "place": 3
     }
   ]
 }
