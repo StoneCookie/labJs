@@ -1,5 +1,9 @@
 # Project11
 
+Если после написания команды "ng serve" проект не запускается, то нужно открыть любой файл с расширением *.ts и пересохранить
+
+P.S. не знаю в чем проблема, пытался поправить но не смог, в принципе все работает, только вот эта проблема с первым запуском сервера.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
 ## Development server
