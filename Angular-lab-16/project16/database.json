@@ -1,0 +1,64 @@
+{
+  "workers": [
+    {
+      "id": 1,
+      "surname": "Пешкин",
+      "name": "Сергей",
+      "lastname": "Вадимович",
+      "phone": "(800) 777-77-77",
+      "email": "peshkin90@mail.ru",
+      "birthday": "1990-12-24",
+      "place": 3
+    },
+    {
+      "id": 2,
+      "surname": "Николаев",
+      "name": "Александр",
+      "lastname": "Алексеевич",
+      "phone": "(995) 123-32-21",
+      "email": "nikolaev95@ya.ru",
+      "birthday": "1995-10-13",
+      "place": 0
+    },
+    {
+      "id": 3,
+      "surname": "Должанский",
+      "name": "Афанасий",
+      "lastname": "Петрович",
+      "phone": "(800) 555-63-63",
+      "email": "dolzhanski78@gmail.com",
+      "birthday": "1978-08-09",
+      "place": 1
+    },
+    {
+      "id": 4,
+      "surname": "Чичваркин",
+      "name": "Семен",
+      "lastname": "Максимович",
+      "phone": "(917) 816-22-07",
+      "email": "chichvarkin85@ya.ru",
+      "birthday": "1985-05-17",
+      "place": 3
+    },
+    {
+      "id": 5,
+      "surname": "Дядько",
+      "name": "Игорь",
+      "lastname": "Дмитриевич",
+      "phone": "(996) 757-94-73",
+      "email": "dyadko91@mail.ru",
+      "birthday": "1991-03-28",
+      "place": 2
+    },
+    {
+      "id": 6,
+      "surname": "Служил",
+      "name": "Илья",
+      "lastname": "Сергеевич",
+      "phone": "(916) 759-51-41",
+      "email": "sluzhil98@google.com",
+      "birthday": "1999-09-01",
+      "place": 0
+    }
+  ]
+}

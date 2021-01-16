@@ -1,0 +1,13 @@
+<div class="d-flex align-items-center" style="height: 50px;">
+  <p style="width: 20%;"><span class="fw-bold">Фамилия:</span> {{ info.surname }}</p>
+  <p style="width: 20%;"><span class="fw-bold">Имя:</span> {{ info.name }}</p>
+  <p style="width: 20%;"><span class="fw-bold">Отчество:</span> {{ info.lastname }}</p>
+  <p style="width: 20%;"><span class="fw-bold">Возраст:</span> {{ getUserAge() }}</p>
+  <p style="width: 20%;"><span class="fw-bold">Отдел:</span> {{ getNamePlace() }}</p>
+  <button (click)="routeTo(info)" class="btn btn-success" style="margin-right: .5rem; max-height: 40px;">
+    Редактировать
+  </button>
+  <button (click)="deleteUser(info)" class="btn btn-danger" style="max-height: 40px;">
+    Удалить
+  </button>
+</div>

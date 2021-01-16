@@ -1,0 +1,50 @@
+<!-- ФОРМА ДОБАВЛЕНИЯ НОВОГО СОТРУДНИКА -->
+<div class="container w-50" style="margin-bottom: 150px; margin-top: 50px;">
+  <h3 class="mt-2 mb-3">Добавление нового сотрудника</h3>
+  <form [formGroup]="userForm" class="form-horizontal d-flex flex-column">
+    <div class="form-group d-flex">
+      <label for="exampleInputEmail1" class="control-label w-100">Фамилия
+        <input type="text" class="form-control" formControlName="surname" id="exampleInputEmail1"
+          aria-describedby="emailHelp">
+      </label>
+      <label for="exampleInputEmail1" class="form-label mx-2 w-100">Имя
+        <input type="text" class="form-control" formControlName="name" id="exampleInputEmail1"
+          aria-describedby="emailHelp">
+      </label>
+      <label for="exampleInputEmail1" class="form-label w-100">Отчество
+        <input type="text" class="form-control" formControlName="lastname" id="exampleInputEmail1"
+          aria-describedby="emailHelp">
+      </label>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label w-100">Телефон
+        <input type="text" class="form-control" formControlName="phone" id="exampleInputEmail1"
+          aria-describedby="emailHelp">
+      </label>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label w-100">Email
+        <input type="text" class="form-control" formControlName="email" id="exampleInputEmail1"
+          aria-describedby="emailHelp">
+      </label>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label w-100">Дата рождения
+        <input type="date" class="form-control" formControlName="birthday" id="exampleInputEmail1"
+          aria-describedby="emailHelp">
+      </label>
+    </div>
+    <div class="mb-3">
+      <label class="form-label w-100">Отдел
+        <select class="form-select" formControlName="place" aria-label="Default select example">
+          <option value="0">IT отдел</option>
+          <option value="1">Отдел продаж</option>
+          <option value="2">Отдел доставки</option>
+          <option value="3">Юридический отдел</option>
+        </select>
+      </label>
+    </div>
+    <button [disabled]="!userForm.valid" (click)="addUserData()"
+      class="btn btn-success align-self-end">Добавить</button>
+  </form>
+</div>

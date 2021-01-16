@@ -1,0 +1,18 @@
+<!-- НАВИГАЦИЯ САЙТА -->
+<nav class="navbar navbar-light navbar-expand-sm" style="background-color: #8d71db; box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 0.473);">
+  <div class="container-fluid mx-2">
+    <a class="navbar-brand" style="color: #fff;" [routerLink]="'/'">Project 16</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" [routerLink]="''" style="color: #fff;" [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{ exact: true }">Информация</a>
+        <a class="nav-link" [routerLink]="'/user'" style="color: #fff;" [routerLinkActive]="'active'"
+          [routerLinkActiveOptions]="{ exact: true }">Сотрудники</a>
+      </div>
+    </div>
+  </div>
+</nav>

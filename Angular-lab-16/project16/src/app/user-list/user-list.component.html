@@ -1,0 +1,44 @@
+<!-- СТРАНИЦА С СОТРУДНИКАМИ -->
+<div class="container-fluid">
+  <h3 class="mt-4 mb-3">Список сотрудников</h3>
+  <div class="d-flex">
+    <label class="w-100" for="exampleInputEmail1">Фильтрация
+      <input type="text" class="form-control " id="exampleInputEmail1" [(ngModel)]="naming" placeholder="Имя Фамилия">
+    </label>
+    <label class="mx-2 w-100" for="exampleInputEmail1">Сортировка по ID
+      <select class="form-select" aria-label="Default select example" [(ngModel)]="age">
+        <option selected>ID</option>
+        <option value="0">По убыванию</option>
+        <option value="1">По возрастанию</option>
+      </select>
+    </label>
+    <label class="w-100" for="exampleInputEmail1">Сортировка по Возрасту
+      <select class="form-select" aria-label="Default select example" [(ngModel)]="id">
+        <option selected>Возраст</option>
+        <option value="0">По убыванию</option>
+        <option value="1">По возрастанию</option>
+      </select>
+    </label>
+  </div>
+  <!-- РАЗБИВКА НА ОТДЕЛЫ -->
+  <h3 class="mt-4 mb-2 border-bottom border-secondary" style="line-height: 45px;">IT-отдел</h3>
+  <div *ngFor="let user of users | fiSort : naming | ageSort : age | idSort : id">
+    <app-user *ngIf="user.place == 0" [info]="user" [arr]="users"></app-user>
+  </div>
+
+  <h3 class="mt-4 mb-2 border-bottom border-secondary" style="line-height: 45px;">Отдел продаж</h3>
+  <div *ngFor="let user of users | fiSort : naming | ageSort : age | idSort : id">
+    <app-user *ngIf="user.place == 1" [info]="user" [arr]="users"></app-user>
+  </div>
+
+  <h3 class="mt-4 mb-2 border-bottom border-secondary" style="line-height: 45px;">Отдел доставки</h3>
+  <div *ngFor="let user of users | fiSort : naming | ageSort : age | idSort : id">
+    <app-user *ngIf="user.place == 2" [info]="user" [arr]="users"></app-user>
+  </div>
+
+  <h3 class="mt-4 mb-2 border-bottom border-secondary" style="line-height: 45px;">Юридический отдел</h3>
+  <div *ngFor="let user of users | fiSort : naming | ageSort : age | idSort : id">
+    <app-user *ngIf="user.place == 3" [info]="user" [arr]="users"></app-user>
+  </div>
+</div>
+<app-add-user-form></app-add-user-form>
